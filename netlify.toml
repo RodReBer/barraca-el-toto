@@ -1,3 +1,9 @@
 [build]
-  command = "npm i --force && npm run build"
-  publish = ".next" # O la carpeta donde se genera el build (ej. "out" para Next.js)
+  command = "npm run build"
+  publish = ".next"
+  functions = "netlify/functions"
+
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
