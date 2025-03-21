@@ -22,7 +22,7 @@ export default function CatalogoPage() {
       </div>
 
       <Tabs defaultValue={categories[0].id} className="mt-8">
-        <TabsList className="w-full flex justify-start overflow-auto py-2 mb-6">
+        <TabsList className="w-full flex justify-start overflow-x-auto py-2 mb-6">
           {categories.map((category) => (
             <TabsTrigger key={category.id} value={category.id}>
               {category.name}
